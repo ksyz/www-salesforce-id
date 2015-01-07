@@ -105,7 +105,7 @@ sub id15 {
 	my $self = shift;
 	return $self->{id15} 
 		if $self->{id15};
-	$self->{id15} = join('', @{shift->{id_parts}}[0 .. 14]);
+	$self->{id15} = join('', @{$shift->{id_parts}}[0 .. 14]);
 	return $self->{id15};
 };
 
