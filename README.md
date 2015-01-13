@@ -10,7 +10,8 @@ sorting of ids.
     die $@
         if ($@);
 
-    $sfdc->do_query(sprintf("SELECT Id, Title, FirstName, LastName, Email FROM Contact WHERE Id = '%s'", $search_id->id15);
+    $sfdc->do_query(sprintf("SELECT Id, Title, FirstName, LastName, Email "
+        "FROM Contact WHERE Id = '%s'", $search_id->id15));
 
 
 ### Warning
