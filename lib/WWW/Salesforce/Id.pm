@@ -13,6 +13,9 @@ print Dumper(@_31)
 
 sub new {
 	my ($class, $id) = @_;
+	
+	die "Missing/undefined Id"
+		unless defined $id;
 
 	die "Invalid Id. Id String must be 15 or 18 characters. Is ".length($id)."."
 		if _validate($id) == 0;
